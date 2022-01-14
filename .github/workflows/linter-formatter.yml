@@ -16,6 +16,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - name: install eslint
+      run: npm i -D eslint
     - name: lint and format
       run: npx eslint --fix tests --ext js
     
